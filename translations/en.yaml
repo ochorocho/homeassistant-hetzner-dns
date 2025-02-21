@@ -1,0 +1,19 @@
+---
+configuration:
+  url: 
+    name: API url
+    description: >-
+      https://dns.hetzner.com/api/v1/
+  ip_entity: 
+    name: IP Entity
+    description: >-
+      A entity containing the current external IP address. 
+      Use the routers UPnP feature if available.
+  token: 
+    name: API Token
+    description: >-
+      https://dns.hetzner.com/api-docs/
+  domains: 
+    name: Domains
+    description: >-
+      List of domains to update the IP address.

@@ -1,0 +1,1 @@
+# Hetzner DNS updater
