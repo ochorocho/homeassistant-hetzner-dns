@@ -11,16 +11,13 @@ arch:
   - armv7
   - i386
 options:
-  log_level: "INFO"
-  host: "core-mosquitto"
-  port: 1883
-  username: ""
-  password: ""
-  keepalive: 60
+  url: "https://dns.hetzner.com/api/v1/"
+  token: ""
+  ip_entity: "list-of-entities"
+  domains: ""
 schema:
-  log_level: list(NOTSET|DEBUG|INFO|WARNING|ERROR|CRITICAL)
-  host: str
-  username: str
+  url: str
   token: password
-  port: port
-  keepalive: int
+  ip_entity: device(subsystem=tty)
+  domains:
+    - match(^(?=.{1,255}$)(?!-)[A-Za-z0-9\-]{1,63}(\.[A-Za-z0-9\-]{1,63})*\.?(?<!-)$)
