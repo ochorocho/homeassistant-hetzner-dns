@@ -2,8 +2,11 @@ name: "Hetzner DNS Updater"
 description: "Use the Hetzner DNS API to update IPs of given domains."
 version: "dev"
 slug: "hetzner-dns"
-init: false
-uart: true
+# init: false
+# uart: true
+hassio_api: true
+homeassistant_api: true
+host_network: true
 arch:
   - aarch64
   - amd64
@@ -13,11 +16,11 @@ arch:
 options:
   url: "https://dns.hetzner.com/api/v1/"
   token: ""
-  ip_entity: "list-of-entities"
+  ip_entity: ""
   domains: ""
 schema:
   url: str
   token: password
-  ip_entity: device(subsystem=tty)
+  ip_entity: entity
   domains:
     - match(^(?=.{1,255}$)(?!-)[A-Za-z0-9\-]{1,63}(\.[A-Za-z0-9\-]{1,63})*\.?(?<!-)$)
