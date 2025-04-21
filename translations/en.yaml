@@ -3,7 +3,7 @@ configuration:
   url: 
     name: API url
     description: >-
-      https://dns.hetzner.com/api/v1/
+      Hetzner DNS API Docs: https://dns.hetzner.com/api-docs
   ip_entity: 
     name: IP Entity
     description: >-
@@ -12,8 +12,8 @@ configuration:
   token: 
     name: API Token
     description: >-
-      https://dns.hetzner.com/api-docs/
+      API token can be obtained from the DNS Console: https://dns.hetzner.com/settings/api-token
   domains: 
     name: Domains
     description: >-
-      List of domains to update the IP address.
+      List of domains to update the IP address, e.g. "subdomain.example.com" or "@.example.com"
