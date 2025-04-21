@@ -80,7 +80,7 @@ while true; do
                 bashio::log.error "Failed to update DNS for $domain"
             fi
         else
-            bashio::log.info "No update needed."
+            bashio::log.info "No update needed for $domain."
         fi
     done
 
