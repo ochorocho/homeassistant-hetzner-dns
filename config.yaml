@@ -2,7 +2,7 @@ name: "Hetzner DNS Updater"
 description: >
   Use the Hetzner DNS API to update IPs of given domains. 
   The external IP is retrieved from a given entity cotaining the IP address
-version: "dev"
+version: "1.0.0"
 slug: "hetzner-dns"
 init: false
 hassio_api: true
